@@ -8,6 +8,7 @@ if __name__ == '__main__':
         print('1 - Add expense')
         print('2 - List expense')
         print('3 - Exit')
+        print('-'*50)
         
         option = int(input('Choose the option: '))
         if(option == 1):
@@ -18,9 +19,11 @@ if __name__ == '__main__':
             expense = Expense(description, category, value)
             control.append(expense)
             print('product added successfully.')
+            print('-'*50)
         
         elif(option == 2):
             print('Listing products')
+            print('-'*50)
             control.list_()
         
         elif(option == 3):

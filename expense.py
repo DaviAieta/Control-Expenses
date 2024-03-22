@@ -14,9 +14,12 @@ class ControlExpense:
     def list_(self):
         if self.expenses:
             for index, expense in enumerate(self.expenses, start=1):
-                print(f'{index} - Description: {expense.description}')
+                print(f'{index}. Description: {expense.description}')
                 print(f'Category: {expense.category}')
                 print(f'Value: R${expense.value}')
-                print('-'*10)
+                print('-'*50)
         else:
             print('No registered expenses')
+            
+    def remove(self, index):
+        self.expenses.pop(index)
