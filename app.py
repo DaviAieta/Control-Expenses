@@ -18,3 +18,11 @@ if __name__ == '__main__':
             expense = Expense(description, category, value)
             control.append(expense)
             print('product added successfully.')
+        
+        elif(option == 2):
+            print('Listing products')
+            control.list_()
+        
+        elif(option == 3):
+            print('Leaving...')
+            break
