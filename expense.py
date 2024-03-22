@@ -22,4 +22,7 @@ class ControlExpense:
             print('No registered expenses')
             
     def remove(self, index):
-        self.expenses.pop(index)
+        try:
+            self.expenses.pop(index + 1)
+        except IndexError:
+            print('The index doesnt exist in the list')

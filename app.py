@@ -7,7 +7,8 @@ if __name__ == '__main__':
     while True:
         print('1 - Add expense')
         print('2 - List expense')
-        print('3 - Exit')
+        print('3 - Remove expense')
+        print('4 - Exit')
         print('-'*50)
         
         option = int(input('Choose the option: '))
@@ -27,5 +28,9 @@ if __name__ == '__main__':
             control.list_()
         
         elif(option == 3):
+            index = int(input('Type expense index: '))
+            control.remove(index)
+        
+        elif(option == 4):
             print('Leaving...')
             break
