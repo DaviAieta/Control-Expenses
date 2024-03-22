@@ -11,6 +11,10 @@ if __name__ == '__main__':
         
         option = int(input('Choose the option: '))
         if(option == 1):
-            description = input('What is the name of the expense?')
-            category = input('What is the expense category?')
-            value = input('What is the value of the expense?')
+            description = input('What is the name of the expense?: ')
+            category = input('What is the expense category?: ')
+            value = input('What is the value of the expense?: ')
+            
+            expense = Expense(description, category, value)
+            control.append(expense)
+            print('product added successfully.')
